@@ -1,0 +1,71 @@
+*:focus {
+    outline: 0!important;
+}
+body {
+    width:350px;
+    margin:auto;
+}
+button.zipCopyBtn {
+    border: none;
+    cursor: pointer;
+    height: 20px;
+    width:40px;
+    vertical-align: text-top;
+    margin-right: 0;
+
+}
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; height:175px;overflow: auto; text-align: right;padding-right:10px; cursor: pointer}
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap;; overflow: hidden;text-align: right; }
+.autocomplete-selected { background: #F0F0F0; text-align: right;}
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; text-align: right;}
+.container {
+    direction: rtl;
+    text-align: right;
+    background: #F8F8F8;
+    padding: 0;
+}
+#container_box {
+    padding:15px;
+}
+#upperIcon {
+    top: 0;
+    left: 0px;
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+
+}
+#sub_text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: 2px;
+    border-top-color: red;
+    border-top-style: dotted;
+    display: none;
+}
+#tos {
+    margin-top:10px;
+}
+#verification {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: none;
+}
+#zipInput {
+    width: 75px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #dff0d8;
+    border-color: #dff0d8;
+    border: 0;
+    color: #3c763d;
+    cursor: default;
+}
+.btn {
+    width:88px;
+}
+.form-control {
+    margin-bottom: 12px;
+}

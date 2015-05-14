@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Search ZIP code in Israel without using the Postal Service website">
+    <meta name="author" content="Omri Ariav">
+    <title>חיפוש מיקוד בישראל</title>
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery.autocomplete.js"></script>
+    <script src="zip.js"></script>
+    <script src="ga.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div id="container_box">
+        <h4>חיפוש מיקוד בישראל</h4>
+        <div id="form_main">
+            <form id="main_form">
+                <input type="text" class="form-control" placeholder="הכנס שם עיר" id="formCity"/>
+                <div class="street_search">
+                    <input type="text" class="form-control" placeholder="הכנס שם רחוב" id="formStreet" style="display:none" />
+                    <input type="text" class="form-control" placeholder="מספר בית" id="formHouse" style="display:none" />
+                    <select class="form-control" placeholder="כניסה" id="formEntrance" style="display:none">
+                        <option value="" selected>כניסה</option>
+                        <option value="א">א</option>
+                        <option value="ב">ב</option>
+                        <option value="ג">ג</option>
+                        <option value="ד">ד</option>
+                        <option value="ה">ה</option>
+                        <option value="ו">ו</option>
+                        <option value="ז">ז</option>
+                        <option value="ח">ח</option>
+                        <option value="ט">ט</option>
+                        <option value="י">י</option>
+                    </select>
+                </div>
+                <div class="pob_search">
+                    <div id="sub_text" style="display:none;">או</div>
+                    <input type="text" class="form-control" placeholder="מספר תא דואר" id="formPob" style="display:none" />
+                </div>
+                <input type="hidden" id="formStreetId"/>
+                <div id="formZip" class="alert alert-success" style="display:none;font-size:16px">
+                    המיקוד הינו:
+                    <input type="text" id="zipInput" readonly="true" />
+                    <button type="button" id="zipCopyBtn" class="btn btn-success btn-sm" title="העתקה ללוח הגזירים Clipboard">העתקה</button>
+                </div>
+                <button type=button class="btn btn-success btn-bg" id="findzip" value="מצא מיקוד">מצא מיקוד</button>
+                <button type=button class="btn btn-info btn-bg" id="clear_fields" value="ניקוי שדות" style="display:none;">ניקוי שדות</button>
+                <div id="verification" class="alert alert-warning"></div>
+                <div id="tos" class="alert alert-info">השימוש בתוסף זה הוא על אחריות המשתמשת בלבד. תוסף זה אינו קשור בשום צורה שהיא לדואר ישראל. ט.ל.ח</div>
+            </form>
+        </div>
+    </div>
+</div><!-- /.container -->
+
+
+</body>
+</html>
