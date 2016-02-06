@@ -1,0 +1,9 @@
+{
+  "name": "israelzipsearch",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "string-format": "^0.5.0"
+  },
+  "devDependencies": {}
+}

@@ -63,9 +63,32 @@ button.zipCopyBtn {
     color: #3c763d;
     cursor: default;
 }
-.btn {
+.search .btn {
     width:88px;
 }
 .form-control {
     margin-bottom: 12px;
+}
+
+.saved-zip {
+    margin-bottom: 5px;
+    padding:7px;
+    display: flex;
+    align-items: center;
+}
+
+.saved-zip .btn {
+    width:80px;
+}
+
+.saved-zip .address {
+    flex-grow: 1;
+}
+
+.saved-zip .delete-btn {
+    width:38px;
+    margin-right:5px;
+}
+.saved-zip .copy-zip-btn {
+    margin-right:5px;
 }

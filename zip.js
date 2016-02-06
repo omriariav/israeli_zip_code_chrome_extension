@@ -70,7 +70,7 @@ function isNumeric(n) {
 
 function resizeBox() {
     oper = navigator.platform.substr(0,3);
-    console.log(oper);
+    
     if (oper == "Mac") {
         deltaHeight = 20;
         deltaWidth = 0;
@@ -135,9 +135,12 @@ function saveResults(zipString, cityString, streetString, houseString, pobString
 }
 
 function showResults(zipString, cityString, streetString, houseString, pobString, entranceString) {
+    
     $('#formCity').val(cityString).show();
     var processDataFlag = clientSideVerifier(streetString, pobString, houseString, zipString)
     if (processDataFlag == true) {
+        window.saveZipItem(zipString, cityString, streetString, houseString, pobString, entranceString);
+        
         $('#sub_text').hide();
         $('#zipInput').val(zipString);
         $('#formZip').show();
@@ -398,7 +401,7 @@ $(document).ready(function(){
         $('#zipInput').fadeOut(300);
         $('#zipInput').fadeIn(300);
         $('#zipCopyBtn').html("הועתק!");
-//        resizeBox();
+       resizeBox();
     });
 
     $(window).blur(function() {
