@@ -125,12 +125,12 @@
 	    oper = navigator.platform.substr(0,3);
 	    
 	    if (oper == "Mac") {
-	        deltaHeight = 20;
+	        deltaHeight = 60;
 	        deltaWidth = 0;
 	    }
 	    else {
-	        deltaHeight = 50;
-	        deltaWidth = 50;
+	        deltaHeight = 60;
+	        deltaWidth = 60;
 	    }
 	    var bodyHeight = $('.container').height() + deltaHeight;
 	    var bodyWidth = $('.container').width() + deltaWidth;

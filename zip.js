@@ -72,7 +72,7 @@ function resizeBox() {
     oper = navigator.platform.substr(0,3);
     
     if (oper == "Mac") {
-        deltaHeight = 20;
+        deltaHeight = 50;
         deltaWidth = 0;
     }
     else {

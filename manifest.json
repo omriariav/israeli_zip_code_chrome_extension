@@ -23,5 +23,5 @@
    "permissions": [ "https://www.israelpost.co.il/*", "clipboardWrite", "contextMenus", "storage" ],
    "short_name": "חיפוש מיקוד בישראל במהירות ובקלות ללא צורך להיכנס לאתר דואר ישראל",
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.3"
+   "version": "1.4"
 }
