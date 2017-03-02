@@ -19,9 +19,11 @@
    },
    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAohgZV0eSZ1/iJ4KBBPS+BfA3HxxO7rAs2pFqMwWhXzKzdGrvP8BLHQiRTcW8mhqn+1+c6UHhWwkG+DA/UTAmMtZ3FCcM1gn2d3HRlOOVJ/FzRBOXdQTpyAf1LlWrZVEUzhTAztroIQM8kksop4oPptyOmwBDf1sn4HFkojKpRDrFEADkIy1cqaFwyDfBtq2MA0ofY2AeG8Y06VgxlskM2ZRSBam7jf4/7zPsfE4RPAWU+4FlJ+mhOE5zT13tkP+v9nKBqOqAo0OR2BzP4nUDhpTXLeNsey3Biz4JWgOiq+IlwFIrn6GKeFUD3Ge2VolAoceZQg6eN++pxpMm7IUQOwIDAQAB",
    "manifest_version": 2,
-   "name": "חיפוש מיקוד בישראל",
+   "name": "איתור מיקוד בישראל",
    "permissions": [ "https://www.israelpost.co.il/*", "clipboardWrite", "contextMenus", "storage" ],
-   "short_name": "חיפוש מיקוד בישראל במהירות ובקלות ללא צורך להיכנס לאתר דואר ישראל",
+   "short_name": "איתור מיקוד בישראל במהירות ובקלות ללא צורך להיכנס לאתר דואר ישראל",
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.4"
+   "version": "1.4.1"
 }
+
+
