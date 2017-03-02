@@ -21,7 +21,6 @@ itemsContainer.on('click', '.copy-zip-btn', function() {
     var $this = $(this);
     var id = $this.data('id');
     var item = tempIdToItem[id];
-    
     localStorageManager.deleteZipItem(item);
     tempIdToItem[id] = undefined;
     $this.parent('.saved-zip').remove();
@@ -30,7 +29,7 @@ itemsContainer.on('click', '.copy-zip-btn', function() {
 function addZipItemToDom(item) {
     var id = uuid.v4();
     tempIdToItem[id] = item;
-    
+
     var element = $('<div class="alert alert-success saved-zip"></div>');
     var text = format('<div class="address">{0}</div>', getSavedZipElementText(item));
     element.append(text);

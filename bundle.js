@@ -501,10 +501,10 @@
 
 	function addZipItemToDom(item) {
 	    var id = uuid.v4();
+	    var zip = item.zip || "";
 	    tempIdToItem[id] = item;
-	    
 	    var element = $('<div class="alert alert-success saved-zip"></div>');
-	    var text = format('<div class="address">{0}</div>', getSavedZipElementText(item));
+	    var text = format('<div class="address">{0} <b>({1})</b></div>', getSavedZipElementText(item), zip);
 	    element.append(text);
 	    element.append('<button type="button" class="btn btn-success btn-sm copy-zip-btn" data-zip="' + item.zip + '">העתק מיקוד</button>');
 	    element.append('<button type="button" class="btn btn-danger delete-btn" data-id="' + id + '">X</button>');
